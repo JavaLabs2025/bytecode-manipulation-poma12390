@@ -19,7 +19,7 @@ public final class JarMetricsCalculator {
     private final Path jarPath;
 
     public JarMetricsCalculator(Path jarPath) {
-        this.jarPath = Objects.requireNonNull(jarPath, "jarPath");
+        this.jarPath = Objects.requireNonNull(jarPath);
     }
 
     public ProjectMetrics analyze() throws IOException {
